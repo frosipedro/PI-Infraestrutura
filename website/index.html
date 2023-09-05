@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GestaoDeInfraestrutura</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <img src="/assets/unijui-logo.png" alt="Logo Unijui" />
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#Contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <img src="/assets/unijui-logo.png" alt="Logo Unijui" />
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="sensor1">
+        <div class="section__pic-container">
+            <img src="/assets/unijui-logo.png" alt="Foto Sensor 1" />
+        </div>
+        <div class="section__text">
+            <h1 class="title">Sensor X</h1>
+            <p class="section__text__p1">Nome:</p>
+            <p class="section__text__p2">Ultimo sinal enviado:</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('/assets/unijui-logo.png')">Download Manual</button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+
+
+</html>
